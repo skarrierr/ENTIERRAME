@@ -2,7 +2,7 @@
 
 David Reyes
 
--¿Qué es HTML? ¿CSS? ¿Javascript?
+#-¿Qué es HTML? ¿CSS? ¿Javascript?
 
 HTML (HyperText MarkUp Language), es un lenguaje que se usa para dar estructuras a páginas web y sus contenidos.
 
@@ -11,8 +11,7 @@ HTML (HyperText MarkUp Language), es un lenguaje que se usa para dar estructuras
 JavaScript es un lenguaje de programación que se usa para dar interactividad y mejorar la experiencia en las páginas web.
 
 -¿Qué es el formato Markdown?
-
-	Markdown es un lenguaje de marcado que se utiliza para dar formato a textos empleando una serie de carácteres especiales.
+Markdown es un lenguaje de marcado que se utiliza para dar formato a textos empleando una serie de carácteres especiales.
 
 -¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
 
