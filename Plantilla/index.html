@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8"/>
+<title>Plantilla</title>
+
+<link rel="stylesheet" href="estilo.css"/>
+
+</head>
+
+<body>
+
+<header class="estructura-cuerpo">
+<h1>Título de plantilla<h1>
+<p><em>idioteces variads</p></em>
+<header>
+
+<nav>
+<ul>
+<li><a href="1">Uno</a></li>
+<li><a href="2">Dos</a></li>
+<li><a href="3">Tres</a></li>
+<li><a href="4">Cuatro</a></li>
+</ul>
+</nav>
+
+<main>
+<article> 
+<form id="contact-form">
+<ul>
+<li>
+<label for="name-user">Name:</label> 
+<input type="text" class="form-input" name="nombre" id="name-user"/></p>
+<label for="name-user"class="error-form-label"id="name-user-error"></label> 
+
+
+<li>
+<label for="tel-user">Phone:</label> 
+<input type="text" class="form-input" name="telefono" id="tel-user"/></p>
+<label for="tel-user"class="error-form-label"id="tel-user-error"></label> 
+
+<li>
+<label for="email-user">Email:</label>
+<input type="email" class="form-input" name="emaail" id="email-user"/></p>
+<label for="email-user"class="error-form-label"id="email-user-error"></label> 
+
+<li>Selector:
+<select name="pais">
+<option value="es"> ESPAÑA</option>
+<option value="an"> andorra</option>
+</select>
+<li>
+<h3>Aficiones</h3>
+
+<ul>
+<li><input type="checkbox" name="hobbies[]"id="hobby-lol" value="lol"><label for="lol">Jugar al LoL</label></li>
+<li><input type="checkbox" name="hobbies[]"id="hobby-estudiar" value="estudiar"><label for ="estudiar">Estudiar</label></li>
+<li><input type="checkbox" name="hobbies[]"id="hobby-programar" value="programar">Programar</li>
+</ul>
+<ul>
+<li><input type="radio" name="miau value="1"><label for="1">1</label></li>
+<li><input type="radio" name="miau value="2"><label for ="2">2</label></li>
+<li><input type="radio" name="miau value="3"><label for ="3">3</label></li>
+<li><input type="radio" name="miau value="4"><label for ="4">4</label></li>
+<li><input type="radio" name="miau value="5"><label for ="5">5</label></li>
+
+</ul>
+
+
+</li>
+<li><label for="comment-user">Comentario:</label>
+<textarea name="comentario" id = "comment-user"> </textarea>
+
+</ul>
+<p><input type="submit" id="contact-submit">
+</form>
+</article>
+
+
+
+
+<aside>
+<h1>Aside klk</h1>
+<p><time id="hora"></time> </p>
+<p> klk </p>
+</aside>
+</main>
+
+
+<footer>
+<h2>Pie de pagina</h2>
+<p>Pie de pagina(c) 2021</p>
+</footer>
+
+
+<script>
+
+function reloj(){
+let fecha = new Date();
+
+	let hora = fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
+
+	document.getElementById("hora").innerHTML=hora;
+
+}
+let interval_time = 1000;
+let hora_interval = setInterval(reloj, interval_time);
+	
+reloj();
+
+let timeout_time = 3000;
+
+let name_timeout = setTimeout(function(){
+	document.getElementById("name-user").classList.add("form-error");
+	}
+	, timeout_time);
+
+})
+
+document.getElementById("contact-submit").addEventListener("click", function (event){
+event.preventDefault();
+	let contact_name = document.getElementById("name-user")
+	let name = contact_name.value;
+
+	contact_tel = document.getElementById("tel-user")
+	let tel = contact_tel.value;
+
+	let contact_email = document.getElementById("email-user")
+	let email = contact_email.value;
+
+
+
+	if (name.length <= 2){
+		console.log("Nombre cortito")
+		contact_name.classList.add("form-error");
+	}
+	else{
+		console.log(name);
+	}
+	if (email.length < 6){
+		contact_email.classList.add("form-error");
+		console.log("Email incorrecto")
+	}else{
+		contact_email.classList.remove("form-error");
+		console.log(email);
+	}
+	if (tel.length < 9){
+		contact_tel.classList.add("form-error");
+		console.log("Tel incorrecto")
+	}else{
+		contact_tel.classList.remove("form-error");
+		console.log(tel);
+	}
+	console.log("clicaso")
+	let hobbies = document.getElementsByName("hobbies[]");
+	let is_checked = false;
+	for	(let i=0; i < hobbies.length; i++ ){
+		if (hobbies[i].checked){
+			is_checked = true;
+		}
+	}
+	if (!is_checked ){
+		alert("selecciona un aficion");
+	}
+})
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

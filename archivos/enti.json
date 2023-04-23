@@ -1,0 +1,70 @@
+{
+	"rooms": {
+		"parking": {
+			"name": "Parking",
+			"desc": "El parking de ENTI, que es un poco mugroso. Ves que hay unas urracas, una verja asquerosa, unos coches no muy limpios y la entrada al edificio.",
+			"exits": ["entrada"],
+			"objects": ["coches", "verja", "urraca", "adelfa"]
+		},
+		"entrada": {
+			"name": "Entrada de ENTI",
+			"desc": "Hay un detector de metales transformado en un medidor de temperatura y 4 habitaciones.",
+			"exits": ["comedor", "clase", "lavavos", "parking", "secretaría"],
+			"objects": ["detector", "fuente", "hidrogel"]
+		},
+		"secretaría": {
+			"name": "secretaría",
+			"desc": "Solo entro aquí dentro para pedir un cargador de movil cuando me lo dejo en casa",
+			"exits": ["entrada"],
+			"objects": ["señora", "mosca"]
+		},
+		"comedor": {
+			"name": "Comedor",
+			"desc": "Aqui como antes de ir a las prácticas",
+			"exits": ["entrada"],
+			"objects": ["restos", "expendedoras"]
+		},
+		"clase": {
+			"name": "Aula de los programadores",
+			"desc": "Aqui huele un poco raro.",
+			"exits": ["entrada"],
+			"objects": ["ordenadores", "pizarra"]
+		},
+		"lavavos": {
+			"name": "Retretes",
+			"desc": "Aqui huele fatal",
+			"exits": ["pasillo"],
+			"objects": ["pañuelo", "inodoro"]
+		}
+	},
+
+	"objects": {
+		"adelfa": "La adelfa, conocida científicamente como Nerium oleander, es un arbusto que puede llegar a alcanzar los 6 metros de altura. Se trata de una especie perennifolia que se caracteriza por contar con un follaje siempre verde durante todo el año. Sus hojas se mantienen en su copa durante todo el año, de ahí que sea una de las especies perfectas si se busca tener un jardín verde incluso en invierno. Son pecioladas, glabras y pueden tener forma de lanza o ser más estrechas. Presentan un tamaño que no supera los 12 centímetros y son de un color verde-grisáceo. Pero si por algo destaca la adelfa es por sus grandes y llamativas flores. Se presentan en primavera y lo hacen formando inflorescencias en cimas corimbiformes (abiertas, racimosas en las que el eje es corto y los pedicelos de las flores son largos y se desarrollan a diferentes alturas). Sus tonalidades van desde el clásico rosa hasta por ejemplo el blanco, el rojo o el amarillo, siendo la primera lo más habitual.",
+
+		"verja": "Una verja tan mierdosa que se la salta hasta mi abuela.",
+
+		"urraca": "Vaya peazo de bicharraco",
+
+		"entrada": "La entrada principal al edificio.",
+
+		"detector": "Temperatura correcta! :D",
+
+		"hidrogel": "está pringosete, puaj",
+
+		"restos": "se lo va a acabar alguien?",
+
+		"expendedoras": "a alguien se le ha atascado la cocacola",
+
+		"señora": "Perdona, ¿me podria dejar un cargador?",
+
+		"mosca": "Que grande es! Tiene hasta cejas!",
+
+		"inodoro": "Se han olvidado de tirar de la cadena.",
+
+		"pizarra": "se ve que estaban haciendo ejercicios de punteros... pobrecillos",
+
+		"ordenadores": "Hay alguno que hecha humo"
+
+	}
+
+}

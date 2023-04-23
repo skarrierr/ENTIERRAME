@@ -1,0 +1,132 @@
+
+html,body{
+padding:0;
+margin:0;
+}
+header{
+	padding:16px 0 16px 0;
+background-color:#333;
+
+background-image:url(imgs/madero.jpg);
+color:#fff;
+}
+h1{
+margin:0;
+}
+
+nav ul{
+display:flex;
+padding:0;
+margin:0;
+}
+
+nav li{
+flex-grow:1;
+list-style:none;
+text-align:center;
+}
+
+nav a{
+display: block;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#ff0000;
+background-color:#aaa;
+}
+
+nav{
+background-color:#ddd; 
+}
+
+main{
+	display:flex ;
+}
+article{
+flex-grow:2 ;
+border:1px solid #0000ff;
+}
+aside{
+
+	border:1px solid #ff0000;
+	padding:12px;
+	background-color: #ff0000;
+	}
+aside h1{
+font-size:32px;
+margin:0;
+color:black;
+background-color:white;
+text-align:center;
+}
+	footer{
+		padding: 16px 0 16px 0;
+	background-color: #333;
+	color:#fff;
+	
+	}
+	footer h2{
+	display:none;
+	}
+	footer p{
+	margin:0 ;
+	text-align: center;
+	
+	}
+	
+	#first-article-title{
+		border-bottom: 2px dashed red
+	}
+	#contact-form ul{
+	list-style:none;
+	padding:0;
+	display:flex = 100px;
+	flex-grow = 1;
+	}
+	#contact-form li{
+		display:flex;
+		flex-direction:column;
+	padding: 8px 4px 8px 4px;
+	}
+	#contact-form label{
+font-size: 14px;
+	}
+		#contact-form li ul li{
+			display:block;
+			font-size: 14px;
+		}
+	#name-user text{
+display:flex;
+flex-grow:1;
+	
+	}
+	
+	
+	
+	
+	@keyframes anim-form-error{
+		
+		0% {
+			border: 1px solid #000
+			}
+		100% {
+			border: 2px solid #f00
+			}
+	}
+	
+.form-input{
+	border: 1px solid #000;
+	color:#000;
+}
+.form-error{
+color:red;
+border: 4px solid #f00;
+animation-name: anim-form-error;
+animation-duration: 1s;	
+
+}
+.fail{
+border:1px, solid red;
+color: red
+}
